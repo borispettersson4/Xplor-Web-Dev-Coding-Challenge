@@ -5,8 +5,6 @@ using System.Threading.Tasks;
 
 namespace WebDevCodingChallenge.Models
 {
-    //
-
     public class Customer
     {
         public int id { get; set; }
