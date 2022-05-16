@@ -78,10 +78,11 @@ namespace WebDevCodingChallenge.Controllers
 
                 foreach (var customer in result)
                 {
-                    if (customer.phone_number.Contains("+46"))
+                    if (!String.IsNullOrEmpty(customer.phone_number) && customer.phone_number.Contains("+46"))
                         customer.country_code = "SE";
 
-                    customerList.Add(customer);
+                    if(!customer.isEmpty())
+                        customerList.Add(customer);
                 }
 
                 customerRepo.Customers = customerList.OrderBy(x => x.id).ToList();

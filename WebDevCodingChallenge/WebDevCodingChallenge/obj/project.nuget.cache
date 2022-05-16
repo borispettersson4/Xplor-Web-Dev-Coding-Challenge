@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Dc6oZzZou36ae+pvs9RDs55qod7ITMT+32i2rIy3QLhGxtR74mQ7mVKUNN6w00vk4UO/u9o9+n+6Cef7Waxg+A==",
+  "dgSpecHash": "6IuTF2mCFYMClfYHO6aL0Ls54LjWedJxqv/CJOSpi/dz6FIzxI9PFDXVgc77XAKZ0rwXDlkWRCO0ycZa2aPpMQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\boris\\OneDrive\\Desktop\\Development\\Job\\Xplor-Web-Dev-Coding-Challenge\\WebDevCodingChallenge\\WebDevCodingChallenge\\WebDevCodingChallenge.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,7 @@
     "C:\\Users\\boris\\.nuget\\packages\\microsoft.aspnet.webpages\\3.2.8\\microsoft.aspnet.webpages.3.2.8.nupkg.sha512",
     "C:\\Users\\boris\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\boris\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\boris\\.nuget\\packages\\microsoft.typescript.msbuild\\4.6.4\\microsoft.typescript.msbuild.4.6.4.nupkg.sha512",
     "C:\\Users\\boris\\.nuget\\packages\\microsoft.web.infrastructure\\1.0.0\\microsoft.web.infrastructure.1.0.0.nupkg.sha512",
     "C:\\Users\\boris\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\boris\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",

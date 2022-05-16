@@ -68,7 +68,6 @@ C:\Users\boris\OneDrive\Desktop\Development\Job\Xplor-Web-Dev-Coding-Challenge\W
 C:\Users\boris\OneDrive\Desktop\Development\Job\Xplor-Web-Dev-Coding-Challenge\WebDevCodingChallenge\WebDevCodingChallenge\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 C:\Users\boris\OneDrive\Desktop\Development\Job\Xplor-Web-Dev-Coding-Challenge\WebDevCodingChallenge\WebDevCodingChallenge\bin\Debug\netcoreapp3.1\RestSharp.dll
 C:\Users\boris\OneDrive\Desktop\Development\Job\Xplor-Web-Dev-Coding-Challenge\WebDevCodingChallenge\WebDevCodingChallenge\bin\Debug\netcoreapp3.1\System.Text.Json.dll
-C:\Users\boris\OneDrive\Desktop\Development\Job\Xplor-Web-Dev-Coding-Challenge\WebDevCodingChallenge\WebDevCodingChallenge\obj\Debug\netcoreapp3.1\WebDevCodingChallenge.csprojAssemblyReference.cache
 C:\Users\boris\OneDrive\Desktop\Development\Job\Xplor-Web-Dev-Coding-Challenge\WebDevCodingChallenge\WebDevCodingChallenge\obj\Debug\netcoreapp3.1\WebDevCodingChallenge.AssemblyInfoInputs.cache
 C:\Users\boris\OneDrive\Desktop\Development\Job\Xplor-Web-Dev-Coding-Challenge\WebDevCodingChallenge\WebDevCodingChallenge\obj\Debug\netcoreapp3.1\WebDevCodingChallenge.AssemblyInfo.cs
 C:\Users\boris\OneDrive\Desktop\Development\Job\Xplor-Web-Dev-Coding-Challenge\WebDevCodingChallenge\WebDevCodingChallenge\obj\Debug\netcoreapp3.1\WebDevCodingChallenge.csproj.CoreCompileInputs.cache
@@ -94,3 +93,6 @@ C:\Users\boris\OneDrive\Desktop\Development\Job\Xplor-Web-Dev-Coding-Challenge\W
 C:\Users\boris\OneDrive\Desktop\Development\Job\Xplor-Web-Dev-Coding-Challenge\WebDevCodingChallenge\WebDevCodingChallenge\obj\Debug\netcoreapp3.1\WebDevCodingChallenge.dll
 C:\Users\boris\OneDrive\Desktop\Development\Job\Xplor-Web-Dev-Coding-Challenge\WebDevCodingChallenge\WebDevCodingChallenge\obj\Debug\netcoreapp3.1\WebDevCodingChallenge.pdb
 C:\Users\boris\OneDrive\Desktop\Development\Job\Xplor-Web-Dev-Coding-Challenge\WebDevCodingChallenge\WebDevCodingChallenge\obj\Debug\netcoreapp3.1\WebDevCodingChallenge.genruntimeconfig.cache
+C:\Users\boris\OneDrive\Desktop\Development\Job\Xplor-Web-Dev-Coding-Challenge\WebDevCodingChallenge\WebDevCodingChallenge\bin\Debug\netcoreapp3.1\package.json
+C:\Users\boris\OneDrive\Desktop\Development\Job\Xplor-Web-Dev-Coding-Challenge\WebDevCodingChallenge\WebDevCodingChallenge\obj\Debug\netcoreapp3.1\WebDevCodingChallenge.csprojAssemblyReference.cache
+C:\Users\boris\OneDrive\Desktop\Development\Job\Xplor-Web-Dev-Coding-Challenge\WebDevCodingChallenge\WebDevCodingChallenge\bin\Debug\netcoreapp3.1\package-lock.json

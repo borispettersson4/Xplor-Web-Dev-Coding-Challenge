@@ -10,7 +10,7 @@
         console.log("Fetching Table...");
 
         var customers = new Array();
-        customers.push(["Customer Id", "First Name", "Last Name", "Email", "Int Phone Number", "Country Code", "Gender", "Balance Total"]);
+        customers.push(["Customer Id", "First Name", "Last Name", "Email", "Int. Phone Number", "Country Code", "Gender", "Balance Total"]);
 
         @foreach (var customer in Model.Customers)
         {
@@ -31,16 +31,13 @@
     </h6>
 </div>
 
-@if (Model.Customers != null)
+@if (Model.ErrorMessage == null)
 {
     <div id="bootstrap_alert" class="alert alert-success" role="alert">
     </div>
     <div class="center-content">
         <div id="customerTable">
         </div>
-        <button id="Create_Customer" class="btn btn-primary" type="submit">Create Customer</button>
-        <button id="Reset_Table" class="btn btn-primary" type="submit">Reset Table</button>
-
     </div>
 }
 else if (Model.ErrorMessage != null)
@@ -56,10 +53,13 @@ else
     </div>
 }
 
+<button id="Create_Customer" class="btn btn-primary" type="submit">Create Customer</button>
+<button id="Reset_Table" class="btn btn-primary" type="submit">Reset Table</button>
+
 <div>
     <label class="disclaimer">
-    Disclaimer : Some elements such as <b>country_code</b> and <b>balance</b> will not update at the server side, even when the
+        Disclaimer : Some elements such as <b>country_code</b> and <b>balance</b> will not update at the server side, even when the
         POST request is sent. Therefore, <b>Country Code</b> is simulated based on the <b>phone_number</b> entries on the client side,
-        while <b>balance</b> remains unmodified from the server.
+        while <b>balance</b> remains unmodified from the server. If the table throws an error, try pressing <b>Reset Table</b> to generate new Customers.
     </label>
 </div>

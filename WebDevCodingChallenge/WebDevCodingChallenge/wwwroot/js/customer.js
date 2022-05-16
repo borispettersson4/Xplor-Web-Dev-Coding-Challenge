@@ -1,8 +1,6 @@
-﻿function handleValidation(errors) {
-
+function handleValidation(errors) {
     $(".error").remove();
     $('.is-invalid').attr('class', 'form-control');
-
     for (var i = 0; i < (errors.length); i++) {
         if (errors[i].includes("Firstname")) {
             $('input#field_firstName').after('<label class="error">Invalid Name Format</label>');
@@ -25,23 +23,19 @@
                 $('input#field_email').after('<label class="error">Invalid Email</label>');
             else
                 $('input#field_email').after('<label class="error">Required Field</label>');
-
             $('input#field_email').attr('class', 'form-control is-invalid');
         }
     }
 }
-
 $(document).ready(function () {
-
     $('#customerFormSubmit').submit(function (e) {
         e.preventDefault();
-
         var $inputs = $('#customerFormSubmit :input');
         var values = {};
         $inputs.each(function () {
+            //@ts-ignore
             values[this.name] = $(this).val();
         });
-
         $.ajax({
             type: "POST",
             url: "/Customer/Push/",
@@ -61,7 +55,7 @@ $(document).ready(function () {
                 }
                 else {
                     console.log("Form Submitted!");
-                    window.location = "/CustomerList/" + "?updated";
+                    window.location.href = "/CustomerList/" + "?updated";
                 }
             },
             error: function (request, error) {
@@ -69,5 +63,5 @@ $(document).ready(function () {
             }
         });
     });
-
 });
+//# sourceMappingURL=customer.js.map
