@@ -1,0 +1,65 @@
+﻿@model CustomerListModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@section Scripts
+{
+    <script>
+
+        console.log("Fetching Table...");
+
+        var customers = new Array();
+        customers.push(["Customer Id", "First Name", "Last Name", "Email", "Int Phone Number", "Country Code", "Gender", "Balance Total"]);
+
+        @foreach (var customer in Model.Customers)
+        {
+           @:customers.push(["@customer.id", "@customer.firstName", "@customer.lastName", "@customer.email", "@customer.phone_number", "@customer.country_code".toUpperCase(),"@customer.gender".toUpperCase(),"$@customer.balance"]);
+        }
+
+        console.log(customers)
+
+        GenerateTable(customers);
+
+    </script>
+}
+
+<div class="text-center">
+    <h6 class="display-4">Customer Table</h6>
+    <h6 class="mt-lg-2">
+        Data feteched from : <a class="" href="https://getinvoices.azurewebsites.net/api/" target="_blank">https://getinvoices.azurewebsites.net/api/</a>
+    </h6>
+</div>
+
+@if (Model.Customers != null)
+{
+    <div id="bootstrap_alert" class="alert alert-success" role="alert">
+    </div>
+    <div class="center-content">
+        <div id="customerTable">
+        </div>
+        <button id="Create_Customer" class="btn btn-primary" type="submit">Create Customer</button>
+        <button id="Reset_Table" class="btn btn-primary" type="submit">Reset Table</button>
+
+    </div>
+}
+else if (Model.ErrorMessage != null)
+{
+    <div class="alert alert-danger" role="alert">
+        @Model.ErrorMessage
+    </div>
+}
+else
+{
+    <div class="alert alert-danger" role="alert">
+        Error Fetching Table
+    </div>
+}
+
+<div>
+    <label class="disclaimer">
+    Disclaimer : Some elements such as <b>country_code</b> and <b>balance</b> will not update at the server side, even when the
+        POST request is sent. Therefore, <b>Country Code</b> is simulated based on the <b>phone_number</b> entries on the client side,
+        while <b>balance</b> remains unmodified from the server.
+    </label>
+</div>
