@@ -11,7 +11,7 @@ function handleValidation(errors) {
             $('input#field_lastName').attr('class', 'form-control is-invalid');
         }
         else if (errors[i].includes("Phone")) {
-            $('input#field_phone').after('<label class="error">Invalid Phone Number</label>');
+            $('#field_phone_input').after('<label class="error">Invalid Phone Number</label>');
             $('input#field_phone').attr('class', 'form-control is-invalid');
         }
         else if (errors[i].includes("Balance")) {

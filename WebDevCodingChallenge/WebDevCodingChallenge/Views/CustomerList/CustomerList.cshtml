@@ -63,3 +63,20 @@ else
         while <b>balance</b> remains unmodified from the server. If the table throws an error, try pressing <b>Reset Table</b> to generate new Customers.
     </label>
 </div>
+
+<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteModalTitle">Delete Customer</h5>
+            </div>
+            <div class="modal-body">
+                Are you sure you want to delete this Customer from the server? This process cannot be undone.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <button id="Modal_Delete_Button" customer_id="" class="btn btn-primary" type="submit">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>

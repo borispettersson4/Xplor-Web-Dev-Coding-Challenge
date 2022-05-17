@@ -50,6 +50,8 @@ function GenerateTable(customers) {
                 button.setAttribute("customer_id", customers[i][0]);
                 button.setAttribute("class", "btn btn-primary");
                 button.setAttribute("type", "submit");
+                button.setAttribute("data-bs-toggle", "modal");
+                button.setAttribute("data-bs-target", "deleteModal");
                 button.innerHTML = "Delete";
                 cell.appendChild(button);
             }
@@ -80,24 +82,13 @@ $(document).ready(function () {
     $(".btn-primary").click(function () {
         //Handle Customer Edit / Delete functions
         if (this.getAttribute("customer_id") != null) {
-
-            console.log("Customer ID found");
             var customer_id: string = this.getAttribute("customer_id");
 
             if (this.id == "Delete_Button") {
-                $.ajax({
-                    type: "DELETE",
-                    crossDomain: true,
-                    url: "/CustomerList/Delete/" + customer_id,
-                    cache: false,
-                    success: function (data) {
-                        alert("Deleted Customer " + customer_id);
-                        location.reload();
-                    },
-                    error: function (request, error) {
-                        alert("Couldn't Delete Customer. An Error has occurred. | " + error);
-                    }
-                });
+                //@ts-ignore
+                $('#deleteModal').modal({ show: true });
+                $('#deleteModalTitle').html("Delete Customer " + customer_id);
+                $('button#Modal_Delete_Button').attr("customer_id", customer_id);
             }
             else if (this.id == "Edit_Button") {
                 try {
@@ -105,6 +96,26 @@ $(document).ready(function () {
                 }
                 catch (e) {
                     alert("Couldn't Edit Customer. An Error has occurred. | " + e);
+                }
+            }
+            else if (this.id == "Modal_Delete_Button") {
+                try {
+                    $.ajax({
+                        type: "DELETE",
+                        crossDomain: true,
+                        url: "/CustomerList/Delete/" + customer_id,
+                        cache: false,
+                        success: function (data) {
+                            console.log("Deleteing Customer " + customer_id);
+                            location.reload();
+                        },
+                        error: function (request, error) {
+                            alert("Couldn't Delete Customer. An Error has occurred. | " + error);
+                        }
+                    });
+                }
+                catch (e) {
+                    alert("Couldn't Delete Customer. An Error has occurred. | " + e);
                 }
             }
         }

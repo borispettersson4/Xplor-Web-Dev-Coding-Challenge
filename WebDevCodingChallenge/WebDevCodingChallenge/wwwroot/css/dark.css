@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #222;
+    background-color: #220021;
     color: white;
 }
 
@@ -66,11 +66,11 @@ hr {
 }
 
 a[href] {
-    color: #3ba0e6;
+    color: #8f57ff;
 }
 
     a[href]:hover {
-        color: #3ba0e6;
+        color: #b490fc;
     }
 
 img {

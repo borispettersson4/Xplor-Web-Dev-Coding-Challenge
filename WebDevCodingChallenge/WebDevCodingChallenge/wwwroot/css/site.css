@@ -10,18 +10,56 @@ a {
 
 .btn-primary {
   color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+  background-color: #6923f4;
+  border-color: #6923f4;
 }
 
+    .btn-primary:hover {
+        color: #fff;
+        background-color: #8348f7;
+        border-color: #8348f7 !important;
+    }
+
+    .btn-primary:focus {
+        color: #fff;
+        outline: 0 !important;
+        background-color: #8348f7 !important;
+        border-color: #8348f7 !important;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6) !important;
+        ;
+    }
+
+    .btn-primary:active {
+        color: #fff;
+        outline: 0 !important;
+        background-color: #8348f7 !important;
+        border-color: #8348f7 !important;
+    }
+
+.btn-secondary {
+    font-family:Arial;
+    font:bold;
+    font-weight:bolder;
+    color: #222 !important;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+    .btn-secondary:hover {
+        font: bold;
+        color: #222 !important;
+        background-color: #fff;
+        border-color: #222;
+    }
+
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
 }
 
 .navbar-light .navbar-brand {
-    color: #D8D8D8 !important;
+    color: #f44e27 !important;
     font-family: 'Arial Rounded MT';
     font: bold;
 }
@@ -76,7 +114,8 @@ body {
   width: 100%;
   white-space: nowrap;
   line-height: 60px;
-  color:black;
+  color:white;
+  background-color:white;
 }
 
 /* Custom CSS */
@@ -84,24 +123,27 @@ body {
 .center-content {
     margin-left: auto;
     margin-right: auto;
-    width:auto;
 }
 
 table {
     border: 0.5px solid #6f6f6f;
     border-collapse: collapse;
     empty-cells: hide;
+    width:100%;
 }
 
     table th {
-        background-color: #1b6ec2;
+        background-color: #6923f4;
         color: #333;
         font-weight: bold;
         margin: 2px;
     }
 
     table th, table td {
-        padding: 10px;
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
         border-color: #6f6f6f;
         color: #d8d8d8;
     }
@@ -114,7 +156,8 @@ table {
     .customerTable tbody {
         display: block;
         height: 500px;
-        overflow: auto;
+        overflow-y: auto;
+        max-width:100%;
     }
 
 /* Customer Form */
@@ -145,12 +188,12 @@ table {
 
 /*  Additional Styling */
 .form-control {
-    background-color: #222;
+    background-color: transparent;
     color: #D8D8D8;
 }
 
     .form-control:focus {
-        background-color: #222;
+        background-color: transparent;
         color: #D8D8D8;
     }
 
@@ -159,12 +202,17 @@ table {
     font-size:40px;
 }
 
+#headerItem {
+    background-color: white !important;
+}
+
 .disclaimer {
     margin-top: 3%;
+    color:#aeaeae
 }
 
     .disclaimer b {
-        color: wheat;
+        color: #8852f5
     }
 
 .description {
@@ -175,5 +223,47 @@ table {
 }
 
     .description b {
-        color: wheat;
+        color: #8852f5
     }
+
+.logo_image {
+    width:80%;
+    height:80%;
+}
+
+.footer_bold {
+    font-family: 'Arial Rounded MT';
+    font: bold;
+    font-weight: bolder;
+    color: #222;
+    font-size:14px !important;
+}
+
+.modal-body {
+    color: #222 !important;
+    font-size: 14px;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+.modal-title {
+    margin: 0px !important;
+}
+
+.modal-header {
+    font-family: 'Arial Rounded MT';
+    font: bold;
+    font-weight: bolder;
+    color: #222 !important;
+    border-bottom: 0px !important;
+}
+
+.modal-footer {
+    border-top: 0px !important;
+}
+
+option {
+    color:#222;
+}

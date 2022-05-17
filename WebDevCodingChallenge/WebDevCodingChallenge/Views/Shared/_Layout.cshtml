@@ -4,7 +4,9 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Web-Dev-Challenge Customer Table</title>
+    <title>
+        @ViewData["Title"] - Web-Dev-Challenge Customer Table
+    </title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
     <link rel="stylesheet" href="~/css/dark.css" />
@@ -12,9 +14,11 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-transparent border-bottom box-shadow mb-3">
+        <nav id="headerItem" class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-transparent border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand bg-transparent" asp-area="" asp-controller="CustomerList" asp-action="CustomerList">WebDevCodingChallenge</a>
+                <a class="navbar-brand bg-transparent" asp-area="" asp-controller="CustomerList" asp-action="CustomerList">
+                    <img class="logo_image" src="@Url.Content("~/image/xplor_codingchallenge.png")" />
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -22,7 +26,7 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-primary" href="https://github.com/borisruiz4/Xplor-Web-Dev-Coding-Challenge" target="_blank">Visit Github Page</a>
+                            <a href="https://github.com/borisruiz4/Xplor-Web-Dev-Coding-Challenge" target="_blank" class="btn btn-secondary" role="button" aria-pressed="true">Visit Github Page</a>
                         </li>
                     </ul>
                 </div>
@@ -37,7 +41,9 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2022 | Created by Boris Ruiz Pettersson
+            <b class="footer_bold">
+                &copy; 2022 | Created by Boris Ruiz Pettersson
+            </b>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
